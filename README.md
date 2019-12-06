@@ -34,7 +34,7 @@ There is some error in my code when using **FGSM** algorithm, cuz if you settle 
 | 0.2  |  90.00   |  76.71   | 10.00% |
 | 0.3  |  92.28   |  81.06   | 7.72%  |
 
-**PGD results as Following:**（I'm not sure whether its right or not)
+**PGD results as Following:**（I'm not sure whether it really works or not)
 
 | eps  | top1 err | top5 err | ACC    |
 | :--: | :------: | :------: | ------ |
