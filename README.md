@@ -83,7 +83,9 @@ $ tensorboard --logdir='runs' --port=6006 --host='localhost'
 ### 4. train the model
 Train all the model on a Tesla P40(22912MB)   
 
+#### Attention:
 You need to specify the net you want to train using arg -net
+if you want to use some training tricks to improve accuracy,maybe you need to modify train.py(I have implemented some training tricks on VGG16.Although the advance is tiny,I guess on other models maybe you can get a better result.)
 
 ```bash
 $ python train.py -net vgg16
@@ -94,6 +96,13 @@ $ python train.py -net vgg16
 Test the model using test.py
 ```bash
 $ python test.py -net vgg16 -weights path_to_vgg16_weights_file
+```
+
+### 6.Attack the model
+
+```bash
+$ python FGSM.py
+$ python PGD.py
 ```
 
 ## Implementated NetWork
